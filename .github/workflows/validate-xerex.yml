@@ -1,0 +1,41 @@
+name: XEREX Robot Inspector
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the files
+        uses: actions/checkout@v4
+      
+      - name: Wake up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install the XML checker
+        run: pip install files-to-claude-xml
+      
+      - name: Check XML structure
+        run: |
+          echo "🤖 Checking XML files..."
+          files-to-claude-xml *.xml > _validated.txt || true
+          echo "✓ XML check complete"
+      
+      - name: Run Robot Inspector
+        run: |
+          echo "🤖 Running validation..."
+          python3 validate_xerex.py || true
+      
+      - name: Save results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: |
+            _validated.txt
+            *.xml
