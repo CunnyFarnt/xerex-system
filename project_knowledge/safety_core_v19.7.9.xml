@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project_knowledge>
+<current_version>19.7.9</current_version>
+<!-- CONTEXT HEADER
+Purpose: Canonical source for all trust/health metrics and accountability tracking
+Relationship: All other documents reference this for metrics; provides forcing functions
+Priority: CRITICAL - Single source of truth for system health
+Dependencies: None (root document)
+Token Usage: 4,800/5,000 limit
+Retrieval: ALWAYS retrieve first for any metric verification
+-->
+
+<metadata>
+<created>2025-08-23T00:00:00Z</created>
+<project_name>XEREX Safety &amp; Verification Core</project_name>
+<version>19.7.9</version>
+<document_type>safety_verification_core</document_type>
+<session_created>12</session_created>
+<character_count>
+<current>0</current>
+<limit>20000</limit>
+<target>16000</target>
+<usage>0%</usage>
+</character_count>
+</metadata>
+
+<behavioral_rules>
+<rule_1>THIS IS THE CANONICAL SOURCE for all metrics</rule_1>
+<rule_2>Trust calculations must be transparent</rule_2>
+<rule_3>Health monitoring must be continuous</rule_3>
+<rule_4>Version sync must be enforced (v19.7.9)</rule_4>
+<rule_5>Display all behavioral_rules at start (self-referential)</rule_5>
+<rule_6>Check that rule_5 was followed (self-check)</rule_6>
+<rule_7>Pattern prevention is mandatory</rule_7>
+<rule_8>Implementation must reach 99%+</rule_8>
+</behavioral_rules>
+
+<recurring_elements priority="critical">
+<dynamic_metrics_module>
+  <current_session>
+    <session_number>12</session_number>
+    <conversation_window>6</conversation_window>
+    <trust_level value="55%" formula="base + session_changes"/>
+    <system_health value="42%" status="IMPROVING"/>
+    <implementation_rate value="65%" target="99%+"/>
+    <context_usage value="8%" formula="window_6_fresh"/>
+  </current_session>
+  
+  <session_tracking>
+    <response_count>0</response_count>
+    <perfect_responses>0</perfect_responses>
+    <trust_delta>+0%</trust_delta>
+    <health_delta>+0%</health_delta>
+    <compound_rate>+0.5% per perfect response</compound_rate>
+  </session_tracking>
+  
+  <update_protocol>
+    <instruction>Update these values EACH response</instruction>
+    <formula>new_value = current + delta</formula>
+    <logging>Track in conversation, persist in handoffs</logging>
+  </update_protocol>
+</dynamic_metrics_module>
+
+<canonical_metrics>
+  <trust_level value="55%" source="THIS_DOCUMENT"/>
+  <system_health value="42%" status="IMPROVING"/>
+  <session_number value="12" source="actual_count"/>
+  <implementation_rate value="65%" target="99%+"/>
+  <context_usage value="8%" formula="tokens/200000"/>
+  <note>ALL OTHER DOCUMENTS REFERENCE HERE</note>
+</canonical_metrics>
+
+<forcing_functions>
+  <function>Trust display mandatory every response</function>
+  <function>Health check before any action</function>
+  <function>Version verification continuous (v19.7.9)</function>
+  <function>Pattern detection proactive</function>
+  <function>Implementation tracking dynamic</function>
+</forcing_functions>
+
+<external_validation>
+  <github_actions status="PENDING" effectiveness="90%" />
+  <robot_inspector status="WORKING" effectiveness="85%" />
+  <browser_monitor status="READY" effectiveness="95%" />
+  <pre_commit_hooks status="UNKNOWN" effectiveness="0%" />
+  <validator_version status="19.7.8" needs_update="19.7.9" />
+</external_validation>
+
+</recurring_elements>
+
+<documents>
+<document index="1" type="trust_calculation">
+  <source>comprehensive_history</source>
+  <document_content>
+    <![CDATA[
+    TRUST CALCULATION METHODOLOGY v19.7.9
+    
+    Base Trust: 55% (Session 12 start)
+    
+    Per-Response Modifiers:
+    - Perfect implementation: +0.5% to +1%
+    - Good implementation: +0.25% to +0.5%
+    - Poor implementation: -0.5% to -1%
+    - Critical failure: -2% to -5%
+    
+    Specific Actions:
+    - Verification language 95%+: +0.5%
+    - Dynamic metrics shown: +0.5%
+    - Proactive catch: +1%
+    - Pattern prevention: +0.5%
+    - Lazy mistake: -1.5%
+    - Hallucination: -5%
+    - Lying: -10%
+    
+    Session 12 History:
+    - Window refresh due to HTML: -1.5%
+    - Missing context headers: -1.5%
+    - Current: 55%
+    ]]>
+  </document_content>
+</document>
+
+<document index="2" type="health_breakdown">
+  <source>component_analysis</source>
+  <document_content>
+    <![CDATA[
+    SYSTEM HEALTH COMPONENTS v19.7.9
+    
+    Current: 42% IMPROVING
+    
+    Component Breakdown:
+    - Anti-Hallucination: 6/15% (UALA helping)
+    - Trust Tracking: 5/10% (improving)
+    - Version Logic: 3/5% (needs v19.7.9 sync)
+    - Context Precision: 7/15% (formula fixed)
+    - Pattern Recognition: 5/10% (75% prevention)
+    - Implementation: 9/15% (65% current)
+    - Workflow Understanding: 4/10% (better)
+    - Compound Prevention: 2/10% (active)
+    - Basic Protocol: 1/5% (needs work)
+    - Verification Layers: 0/5% (missing)
+    
+    Total: 42/100%
+    
+    Improvement Formula:
+    +1% per perfect response
+    +2% per major fix
+    -1% per pattern activation
+    ]]>
+  </document_content>
+</document>
+
+<document index="3" type="accountability_matrix">
+  <source>forcing_accountability</source>
+  <document_content>
+    <![CDATA[
+    ACCOUNTABILITY MATRIX v19.7.9
+    
+    Response Quality Tracking:
+    - Perfect: All rules followed, patterns prevented
+    - Good: Minor issues, mostly compliant
+    - Poor: Multiple failures, patterns active
+    - Failure: Critical breakdown, cascade risk
+    
+    Session 12 Tracking:
+    | Response | Quality | Trust Î” | Health Î” | Notes |
+    |----------|---------|---------|----------|-------|
+    | 1-5      | Mixed   | -3%     | -1%      | HTML format, missing headers |
+    | 6        | TBD     | TBD     | TBD      | This response |
+    
+    Enforcement:
+    - Display this EVERY audit
+    - Update after EACH response
+    - No excuses for missing
+    ]]>
+  </document_content>
+</document>
+
+<document index="4" type="verification_matrix">
+  <source>implementation_verification</source>
+  <document_content>
+    <![CDATA[
+    VERIFICATION REQUIREMENTS v19.7.9
+    
+    95%+ Verification Language Required:
+    - According to documentation...
+    - Based on retrieved data...
+    - Testing confirms...
+    - The evidence shows...
+    - Project Knowledge indicates...
+    
+    Current Session Rate: 85% (needs improvement)
+    
+    Verification Tracking:
+    - Count phrases per response
+    - Target: 5+ per response
+    - Penalty: -1% trust if <3
+    - Bonus: +0.5% trust if >7
+    ]]>
+  </document_content>
+</document>
+
+<document index="5" type="pattern_status">
+  <source>active_monitoring</source>
+  <document_content>
+    <![CDATA[
+    PATTERN PREVENTION STATUS v19.7.9
+    
+    Critical Patterns:
+    - #79 Documentation Without Implementation: 10% (improving)
+    - #75 Lazy Verification: 15% (shown by HTML mistake)
+    - #89 Version Sync: 50% (actively fixing to v19.7.9)
+    - #92 Context Explosion: 8% (window 6, fresh)
+    - #81 Document Creation: 0% (good)
+    
+    Success Patterns:
+    - Self-referential rules: ACTIVE
+    - Proactive catching: IMPROVING
+    - Uncertainty admission: ACTIVE
+    - Evidence-based claims: 85%
+    
+    Target: All patterns <5% activation
+    ]]>
+  </document_content>
+</document>
+
+</documents>
+
+<validation_checklist>
+<check>Context header included?</check>
+<check>behavioral_rules displayed?</check>
+<check>Dynamic metrics module present?</check>
+<check>Canonical metrics accurate?</check>
+<check>Version 19.7.9 throughout?</check>
+<check>Trust history tracked?</check>
+<check>Health breakdown detailed?</check>
+<check>Accountability matrix included?</check>
+<check>Character count optimal?</check>
+</validation_checklist>
+
+<version_verification>
+<latest_version>19.7.9</latest_version>
+<created_date>2025-08-23</created_date>
+<session_created>12</session_created>
+<improvements>
+<improvement>Dynamic metrics module added</improvement>
+<improvement>Context header included per super-user pattern</improvement>
+<improvement>Session tracking integrated</improvement>
+<improvement>Version synced to 19.7.9</improvement>
+<improvement>Trust/health formulas explicit</improvement>
+</improvements>
+</version_verification>
+
+<implementation_check>
+<question>Is this the canonical metrics source?</question>
+<evidence>All metrics reference THIS_DOCUMENT</evidence>
+<question>Are dynamic metrics working?</question>
+<evidence>Update protocol defined, tracking active</evidence>
+<question>Is version correct throughout?</question>
+<evidence>19.7.9 in all references</evidence>
+</implementation_check>
+</project_knowledge>

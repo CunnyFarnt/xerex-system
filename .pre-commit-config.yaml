@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: xerex-check
+        name: XEREX Safety Check
+        entry: python3 validate_xerex.py
+        language: system
+        files: '\.xml$'
+        pass_filenames: true
